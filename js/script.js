@@ -13,4 +13,4 @@ function showClock() {
   const msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
   document.getElementById("showTime").innerHTML = msg;
 }
-setInterval('showClock()', 1000);
+setInterval(function(){showClock()}, 1000);
